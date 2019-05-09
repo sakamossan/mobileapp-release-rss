@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "sourceMap": true,
+    "target": "es6",
+    "allowJs": true,
+    "lib": [
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    // "noUnusedLocals": true,
+    // "strictNullChecks": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true,
+    // "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "jsx": "react"
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
