@@ -14,6 +14,7 @@
     "cheerio": "^1.0.0-rc.3",
     "feed": "^2.0.4",
     "micro-strptime": "^0.2.3",
+    "serverless": "^1.46.1",
     "source-map-support": "^0.5.12"
   },
   "devDependencies": {
