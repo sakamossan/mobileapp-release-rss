@@ -5,7 +5,7 @@ import { strptime } from 'micro-strptime';
 
 const { FEED_URL } = process.env;
 
-export async function android_rss(appId) {
+export async function androidRss(appId) {
   const url = `https://play.google.com/store/apps/details?id=${appId}&hl=ja`;
   const resp = await axios.get(url);
   const $ = load(resp.data);

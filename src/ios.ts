@@ -4,7 +4,7 @@ import { strptime } from 'micro-strptime';
 
 const { FEED_URL } = process.env;
 
-export async function ios_rss(appId) {
+export async function iosRss(appId) {
   const url = 'https://itunes.apple.com/lookup?id=' + appId + '&country=JP';
   const resp = await axios.get(url);
   const appInfo = resp.data.results[0];
