@@ -13,6 +13,7 @@ export async function ios_rss(appId) {
   const releaseNotes = appInfo.releaseNotes;
   const image = appInfo.artworkUrl100;
   const updated: Date = strptime(appInfo.currentVersionReleaseDate,'%Y-%m-%dT%H:%M:%S%Z');
+  const link = 'https://apps.apple.com/jp/app/id' + appId;
 
   const feed = new Feed({
     title: 'mobileapp-release-rss',
@@ -37,7 +38,7 @@ export async function ios_rss(appId) {
   feed.addItem({
     title: name,
     id: url,
-    link: url,
+    link: link,
     description: name,
     content: releaseNotes,
     date: updated,
