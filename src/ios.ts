@@ -9,7 +9,6 @@ export async function ios_rss(appId) {
   const resp = await axios.get(url);
   const appInfo = resp.data.results[0];
   const name = appInfo.trackName;
-  console.log(name);
   const releaseNotes = appInfo.releaseNotes;
   const image = appInfo.artworkUrl100;
   const updated: Date = strptime(appInfo.currentVersionReleaseDate,'%Y-%m-%dT%H:%M:%S%Z');
