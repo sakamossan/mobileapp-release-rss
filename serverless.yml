@@ -12,7 +12,6 @@ provider:
   region: ap-northeast-1
   stage: ${opt:stage, 'dev'}
   environment:
-    FEED_URL: ${env:FEED_URL}
 
 functions:
   MobileappReleaseRss:
