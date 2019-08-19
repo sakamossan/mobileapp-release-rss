@@ -29,11 +29,9 @@ export async function iosRss(appId) {
   });
   feed.addItem({
     title: name + ' for iOS updated. version:' + version,
-    //guid: 'iOS:' + appId + ':v:' + version,
     guid: `iOS:${appId}:v:${version}`,
     link: link,
-    description: name + ' for iOS updated. version:' + version,
-    content: releaseNotes,
+    description: releaseNotes,
     date: updated,
   });
   return feed.rss2();

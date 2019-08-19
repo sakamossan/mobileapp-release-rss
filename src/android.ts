@@ -33,11 +33,9 @@ export async function androidRss(appId) {
   });
   feed.addItem({
     title: name + ' for Android updated. published:' + dateFormated,
-    //guid: 'Android:' + appId + ':v:' + dateFormated,
     guid: `Android:${appId}:v:${dateFormated}`,
     link: url,
-    description: name + ' for Android updated. published:' + dateFormated,
-    content: recentChange,
+    description: recentChange,
     date: datePublished,
   });
   return feed.rss2();
