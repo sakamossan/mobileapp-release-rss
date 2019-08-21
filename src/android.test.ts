@@ -1,5 +1,5 @@
 describe('', () => {
-  it('', () => {
+  it('false is falsy', () => {
     expect(false).toBeFalsy();
   });
 });
