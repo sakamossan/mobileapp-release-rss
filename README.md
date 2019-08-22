@@ -33,3 +33,16 @@ $ curl "https://xxxxxxxx.execute-api.ap-northeast-1.amazonaws.com/dev/?android_a
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 ....
 ```
+
+
+## test
+
+```bash
+$ yarn test
+```
+
+Run only some tests
+
+```bash
+$ $(npm bin)/jest --testNamePattern falsy
+```
