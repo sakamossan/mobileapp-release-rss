@@ -9,7 +9,10 @@ export async function iosRss(appId) {
   const name = appInfo.trackName;
   const releaseNotes = appInfo.releaseNotes;
   const image = appInfo.artworkUrl100;
-  const updated: Date = strptime(appInfo.currentVersionReleaseDate,'%Y-%m-%dT%H:%M:%S%Z');
+  const updated: Date = strptime(
+    appInfo.currentVersionReleaseDate,
+    '%Y-%m-%dT%H:%M:%S%Z',
+  );
   const version = appInfo.version;
   const link = 'https://apps.apple.com/jp/app/id' + appId;
 

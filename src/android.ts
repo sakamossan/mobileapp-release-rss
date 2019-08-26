@@ -11,11 +11,20 @@ export async function androidRss(appId) {
     resp.data.match(/(\d+年\d+月\d+日)/)[1],
     '%Y年%m月%d日',
   );
-  const dateFormated
-    = datePublished.getFullYear() + '/' + datePublished.getMonth() + '/' + datePublished.getDate();
+  const dateFormated =
+    datePublished.getFullYear() +
+    '/' +
+    datePublished.getMonth() +
+    '/' +
+    datePublished.getDate();
   const name = $('[itemprop=name]').text();
-  const image= $('img[itemprop=image]').first().attr('src');
-  const recentChange =$('div[itemprop=description]').eq(1).find('span').text()
+  const image = $('img[itemprop=image]')
+    .first()
+    .attr('src');
+  const recentChange = $('div[itemprop=description]')
+    .eq(1)
+    .find('span')
+    .text();
 
   const feed = new Feed({
     title: name + 'for Anroid update information.',
