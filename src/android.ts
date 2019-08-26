@@ -21,6 +21,14 @@ export async function androidRss(appId) {
   const image = $('img[itemprop=image]')
     .first()
     .attr('src');
+
+  // 先に br を line break に変えておく
+  $('div[itemprop=description]')
+    .eq(1)
+    .find('span')
+    .find('br')
+    .replaceWith('\n');
+
   const recentChange = $('div[itemprop=description]')
     .eq(1)
     .find('span')
