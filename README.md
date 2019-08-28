@@ -13,14 +13,14 @@ export AWS_SECRET_ACCESS_KEY=<your-secret-key-here>
 export AWS_DEFAULT_REGION=<your-favorite-region-here>
 ```
 
-- see alse: [Serverless Framework - AWS Lambda Guide - Credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
+- see also: [Serverless Framework - AWS Lambda Guide - Credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 
 
 ## setup
 
 ```bash
 $ yarn install
-$ $(npm bin)/serverless deploy
+$ npx serverless deploy
 ...
 ```
 
