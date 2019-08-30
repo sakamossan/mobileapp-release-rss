@@ -19,7 +19,8 @@ export async function iosRss(appId) {
   const feed = new Feed({
     title: name + 'for iOS update information.',
     description: name + 'for iOS update information.',
-    generator: 'mobileapp-releasse-rss by sakamossan. https://github.com/sakamossan/mobileapp-release-rss',
+    generator:
+      'mobileapp-releasse-rss by sakamossan. https://github.com/sakamossan/mobileapp-release-rss',
     id: link,
     link: link,
     updated: updated,

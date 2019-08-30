@@ -37,7 +37,8 @@ export async function androidRss(appId) {
   const feed = new Feed({
     title: name + 'for Anroid update information.',
     description: name + 'for Android update information.',
-    generator: 'mobileapp-releasse-rss by sakamossan. https://github.com/sakamossan/mobileapp-release-rss',
+    generator:
+      'mobileapp-releasse-rss by sakamossan. https://github.com/sakamossan/mobileapp-release-rss',
     id: url,
     link: url,
     updated: datePublished,
