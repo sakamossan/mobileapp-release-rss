@@ -2,6 +2,7 @@ import axios from 'axios';
 import { load } from 'cheerio';
 import { Feed } from 'feed';
 import { strptime } from 'micro-strptime';
+import { format } from 'date-fns';
 
 export async function androidRss(appId) {
   const url = `https://play.google.com/store/apps/details?id=${appId}&hl=ja`;
@@ -11,12 +12,8 @@ export async function androidRss(appId) {
     resp.data.match(/(\d+年\d+月\d+日)/)[1],
     '%Y年%m月%d日',
   );
-  const dateFormated =
-    datePublished.getFullYear() +
-    '/' +
-    datePublished.getMonth() +
-    '/' +
-    datePublished.getDate();
+  const dateFormated = format(datePublished, 'yyyy/MM/dd');
+
   const name = $('[itemprop=name]').text();
   const image = $('img[itemprop=image]')
     .first()

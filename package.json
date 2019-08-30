@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.3",
+    "date-fns": "^2.0.1",
     "feed": "^2.0.4",
     "micro-strptime": "^0.2.3",
     "serverless": "^1.46.1",
