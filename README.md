@@ -13,14 +13,14 @@ export AWS_SECRET_ACCESS_KEY=<your-secret-key-here>
 export AWS_DEFAULT_REGION=<your-favorite-region-here>
 ```
 
-- see alse: [Serverless Framework - AWS Lambda Guide - Credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
+- see also: [Serverless Framework - AWS Lambda Guide - Credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 
 
 ## setup
 
 ```bash
 $ yarn install
-$ $(npm bin)/serverless deploy
+$ npx serverless deploy
 ...
 ```
 
@@ -32,4 +32,17 @@ $ curl "https://xxxxxxxx.execute-api.ap-northeast-1.amazonaws.com/dev/?android_a
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 ....
+```
+
+
+## test
+
+```bash
+$ yarn test
+```
+
+Run only some tests
+
+```bash
+$ $(npm bin)/jest --testNamePattern falsy
 ```
