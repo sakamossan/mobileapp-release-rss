@@ -6,6 +6,13 @@ import { iosRss } from './src/ios';
 
 export const MobileappReleaseRss: APIGatewayProxyHandler = async (event, _context) => {
   let body = '';
+  if (!event.queryStringParameters) {
+    return {
+      statusCode: 400,
+      body,
+    };
+  }
+
   if (event.queryStringParameters.android_app_id) {
     body = await androidRss(event.queryStringParameters.android_app_id);
   } else if (event.queryStringParameters.ios_app_id) {
