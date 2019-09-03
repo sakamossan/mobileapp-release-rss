@@ -44,5 +44,5 @@ $ yarn test
 Run only some tests
 
 ```bash
-$ $(npm bin)/jest --testNamePattern falsy
+$ npx jest --testNamePattern falsy
 ```
