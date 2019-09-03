@@ -46,3 +46,20 @@ Run only some tests
 ```bash
 $ npx jest --testNamePattern falsy
 ```
+
+## executing local for development
+
+Launch application in local (using serverless-offline)
+
+```bash
+$ npx serverless offline
+```
+
+then, request.
+
+```bash
+$ curl "http://localhost:3000/?android_app_id=$ANDROID_APP_ID"
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+...
+```
